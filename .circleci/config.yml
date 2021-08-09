@@ -1,7 +1,6 @@
 version: 2
 jobs:
   build:
-    working_directory: vote
     docker:
       - image: circleci/python:2.7.14
     steps:
