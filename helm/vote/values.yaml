@@ -9,12 +9,13 @@ vote:
   group: vote 
   container_port: 80
 image:
-  repository: vote
+  repository: ankit86k/vote
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
-imagePullSecrets: [regcred]
+imagePullSecrets:
+        - name: regcred
 
 service:
   type: NodePort
